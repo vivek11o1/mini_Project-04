@@ -1,0 +1,28 @@
+InvoiceNo,StockCode,Description,Quantity,InvoiceDate,UnitPrice,CustomerID,Country
+INV001,PROD001,White Hanging Heart,6,2011-01-15,2.55,17850,United Kingdom
+INV001,PROD002,Metal Lantern,2,2011-01-15,3.39,17850,United Kingdom
+INV002,PROD003,Red Retrospot Plate,12,2011-01-18,4.25,13047,United Kingdom
+INV002,PROD004,Party Bunting,4,2011-01-18,1.85,13047,United Kingdom
+INV003,PROD005,Assorted Colour Bird Ornament,24,2011-02-02,1.69,12583,France
+INV003,PROD006,Vintage Doily Bunting,6,2011-02-02,2.10,12583,France
+INV004,PROD001,White Hanging Heart,3,2011-02-10,2.55,17850,United Kingdom
+INV005,PROD007,Glass Star Frosted,8,2011-03-05,1.45,15291,Germany
+INV005,PROD008,Jumbo Bag Red Retrospot,2,2011-03-05,1.95,15291,Germany
+INV006,PROD009,Set of 3 Cake Tins Pantry Design,12,2011-03-12,4.95,14688,United Kingdom
+INV007,PROD010,Pack of 72 Retrospot Cake Cases,48,2011-04-01,0.42,13047,United Kingdom
+INV007,PROD011,Lunch Bag Red Retrospot,6,2011-04-01,1.65,13047,United Kingdom
+INV008,PROD012,Paper Chain Kit 50's Christmas,80,2011-04-15,2.55,17850,United Kingdom
+INV009,PROD013,Vintage Paisley Stationery Set,3,2011-05-20,4.25,15311,France
+INV009,PROD014,Set of 4 Pantry Jelly Moulds,4,2011-05-20,1.25,15311,France
+INV010,PROD015,Charlotte Bag Suki Design,10,2011-06-01,0.85,14527,Netherlands
+INV011,PROD016,Regency Cakestand 3 Tier,1,2011-06-15,12.75,12583,France
+INV012,PROD017,Party Bunting,20,2011-07-01,1.85,13047,United Kingdom
+INV012,PROD018,Bunting Retrospot,8,2011-07-01,2.95,13047,United Kingdom
+INV013,PROD019,Alarm Clock Bakelike Pink,6,2011-08-10,3.75,17850,United Kingdom
+INV014,PROD020,Recipe Box Pantry Yellow Design,4,2011-09-05,1.95,14688,United Kingdom
+INV015,PROD021,Woodland Charlotte Bag,15,2011-09-20,0.85,15291,Germany
+INV016,PROD022,Set of 3 Regency Cake Tins,2,2011-10-01,5.95,12583,France
+INV017,PROD023,Spotty Bunting,12,2011-10-15,4.95,13047,United Kingdom
+INV018,PROD024,Jumbo Bag Apples,6,2011-11-01,1.95,17850,United Kingdom
+INV019,PROD025,Vintage Memo Block Cream Roses,8,2011-11-20,1.45,15311,France
+INV020,PROD026,Ceramic Storage Jar Happy Day,3,2011-12-01,2.55,14527,Netherlands

@@ -1,0 +1,5 @@
+Cluster,Persona_Name,Description,Customer_Count,Percent_of_Base,Total_Revenue_Generated,Percent_of_Revenue,Avg_Recency_Days,Avg_Frequency_Orders,Avg_Monetary_Value,Estimated_LTV,Recency_Health,Frequency_Health,Monetary_Health,Strategic_Priority,Business_Goal
+0,CHAMPIONS,"Best customers - frequent, recent, high-value buyers",98,19.6%,"£321,720.79",10.2%,26,6.9,£3282.87,£22779.06,54% recent,1% frequent,0% valuable,HIGHEST,Retain and maximize lifetime value
+1,LOYAL CUSTOMERS,Regular buyers with consistent engagement,146,29.2%,"£1,338,020.63",42.4%,24,13.6,£9164.52,£124286.02,65% recent,100% frequent,96% valuable,HIGH,Increase purchase frequency and average order value
+2,AT-RISK / DORMANT,Previously valuable but inactive - need reactivation,67,13.4%,"£274,993.48",8.7%,118,6.9,£4104.38,£28424.37,0% recent,6% frequent,12% valuable,HIGH,Reactivate and restore engagement
+3,GROWTH OPPORTUNITY,New or occasional buyers - nurture for growth,189,37.8%,"£1,222,026.90",38.7%,28,9.9,£6465.75,£64041.72,53% recent,35% frequent,54% valuable,MEDIUM,Develop into loyal customers

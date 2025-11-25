@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Models (binary files - too large for Git)
+models/*.pkl
+
+# Reports (generated files)
+reports/*.pdf
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Exclude all .md files except root README.md
+*.md
+!README.md
+data/**/*.md
+reports/**/*.md
+src/**/*.md
+tests/**/*.md
+notebooks/**/*.md
+
+# Exclude all .txt files except root requirements.txt
+*.txt
+!requirements.txt
+data/**/*.txt
+reports/**/*.txt
+src/**/*.txt
+tests/**/*.txt
+notebooks/**/*.txt
