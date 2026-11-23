@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.git/
+.gitignore
+.pytest_cache/
+.ipynb_checkpoints/
+notebooks/
+tests/
+reports/
+data/raw/
+data/sample_*.csv
+models/
+*.md
+!README.md
+test_api.py

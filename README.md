@@ -52,6 +52,27 @@ Example response:
 
 Smoke test: `python test_api.py` (with the server running).
 
+### Docker / deployment
+
+```bash
+docker build -t customer-segmentation .
+docker run -p 8000:8000 customer-segmentation
+```
+
+Open **http://localhost:8000/docs**. The container reads the `PORT` environment variable (Render injects `PORT=10000` by default) and falls back to `8000` locally. It binds to `0.0.0.0`, as required by Render.
+
+On **Render**, create a **Web Service** with:
+
+- **Runtime:** Docker (the included `Dockerfile` uses Python 3.12)
+- **Health Check Path:** `/health` (initial delay ~15s)
+- No build/start commands are needed — the Dockerfile handles both.
+
+If you are using Render's **Python** runtime instead (the dashboard shows `python3`), set:
+
+- **Build Command:** `pip install -r requirements.txt`
+- **Start Command:** `uvicorn app:app --host 0.0.0.0 --port $PORT`
+- **Health Check Path:** `/health`
+
 ---
 
 ## 🎯 Project Objectives
