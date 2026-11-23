@@ -8,6 +8,52 @@ By combining **RFM analysis (Recency, Frequency, Monetary)** with **K-Means clus
 
 ---
 
+## 🚀 FastAPI Service (Swagger UI)
+
+The K-Means/RFM pipeline is exposed as a REST API with interactive Swagger documentation.
+
+```bash
+pip install -r requirements.txt
+uvicorn app:app --reload
+```
+
+Open **http://localhost:8000/docs** for Swagger UI. The `.pkl` artefacts are not committed to Git, so `helper.py` rebuilds the scaler and K-Means model on first start from `data/processed/rfm_segmented.csv`.
+
+| Method | Path | Description |
+| --- | --- | --- |
+| GET | `/` | API information |
+| GET | `/health` | Health check, clusters and persona names |
+| POST | `/predict` | Segment one customer from Recency / Frequency / Monetary |
+| POST | `/predict/batch` | Segment several customers |
+| POST | `/predict/transactions` | Upload a raw transactions CSV; RFM is calculated automatically |
+| GET | `/docs` | Swagger UI |
+
+Example request:
+
+```bash
+curl -X POST "http://localhost:8000/predict" \
+  -H "Content-Type: application/json" \
+  -d '{"recency": 5, "frequency": 14, "monetary": 9500}'
+```
+
+Example response:
+
+```json
+{
+  "recency": 5.0,
+  "frequency": 14.0,
+  "monetary": 9500.0,
+  "cluster": 1,
+  "persona_name": "LOYAL CUSTOMERS",
+  "priority": "HIGH",
+  "recommended_tactics": ["Personalized product recommendations", "..."]
+}
+```
+
+Smoke test: `python test_api.py` (with the server running).
+
+---
+
 ## 🎯 Project Objectives
 
 1. ✅ **Exploratory Data Analysis** — Understand customer purchase behavior and data characteristics
